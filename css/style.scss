@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+/* color */
+$fontColor: #ED5558;
+$baseColor: #FFFFFF;
+$subColor: #3C89AF;
+$keyColor: #0A5582;
+
+
+/*grobal*/
+html {
+    font-size: 62.5%;
+    background-color: $baseColor;
+}
+
+body {
+    color: $fontColor;
+    font-size: 14px;
+}
+
+/* header */
+header {
+    height: 500px;
+    background-image: url(../images/IMG_8281.JPG);
+    background-size: cover;
+    background-position: center;
+    @media (max-width: 768px) {
+        height: 250px;
+    }
+}
+
+/* main */
+main {
+    padding: 30px;
+    
+    .main-title {
+        text-align: center;
+        margin-bottom: 30px;
+        color: $fontColor;
+        font-weight: bold;
+    }
+    
+    .showcase {
+        margin: 0 80px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+        .showcase-item {
+            width: 28%;
+            background-color: $keyColor;
+            text-align: center;
+            h2 {
+                padding: 30px;
+                background-color: $keyColor;
+                color: #FFFFFF;
+            }
+            p {
+                padding: 80px;
+                background-color: $subColor;
+                color: #FFFFFF;
+            }
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+/* footer */
+footer {
+    background-color: $subColor;
+    padding:30px;
+    color: $baseColor;
+    text-align:center;
+    .footer-title{
+        text-align: center;
+        margin-top: 20px;
+    } 
+    a {
+        text-decoration: none;
+    }
+    .btn{
+        margin: 20px 0;
+        padding: 8px 100px;
+        display: inline-block;
+        background-color: $keyColor;
+        color: $baseColor;
+        border-radius: 5px;
+    }
+}
+    
